@@ -14,9 +14,12 @@
 
 ## Remove the default Vue scaffolding and replace it with React scaffolding 
 
-	php artisan preset react
-	npm install
-	npm run dev
+	composer require laravel/ui --dev
+
+	php artisan ui react
+
+	// Generate login / registration scaffolding...
+	php artisan ui react --auth
 
 ## Installing babel support while working with laravel
 
