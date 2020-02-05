@@ -1,4 +1,4 @@
-### React Tutorial
+# React Tutorial
 
 ## Installing create-react-app
 
@@ -10,9 +10,9 @@
 	cd my-app
 	npm start
 
-### Working with React & Laravel
+## Working with React & Laravel
 
-## Remove the default Vue scaffolding and replace it with React scaffolding 
+### Remove the default Vue scaffolding and replace it with React scaffolding 
 
 	composer require laravel/ui --dev
 
@@ -21,18 +21,13 @@
 	// Generate login / registration scaffolding...
 	php artisan ui react --auth
 
-## Installing babel support while working with laravel
+### Installing babel class-properties support while working with laravel & react
 
-	npm install --save-dev babel-preset-stage-1 babel-preset-env babel-plugin-transform-class-properties babel-preset-react
+	npm install --save-dev @babel/plugin-proposal-class-properties
 
-## Create “.babelrc” file in your root folder, and add these following code:
+### Create “.babelrc” file in your root folder, and add these following code:
 
 	{
-    "plugins": ["transform-class-properties"],
-    "presets": [["env", {"modules": false}], "react"]
+	  "plugins": ["@babel/plugin-proposal-class-properties"]
 	}
-
-## Now open your “webpack.mix.js” file and change “mix.react” to “mix.js”.
-
-	npm run dev
 
